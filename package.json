@@ -1,0 +1,21 @@
+{
+    "name": "evrico",
+    "author": "Koll Potato",
+    "license": "MIT",
+    "version": "0.0.1",
+    "description": "Option and Result for JavaScript and TypeScript developers.",
+    "files": ["dist"],
+    "keywords": ["fp-ts", "option", "result"],
+    "module": "dist/index.mjs",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "lint": "tsc",
+        "build": "tsup",
+        "prepublish": "pnpm run lint && pnpm run build"
+    },
+    "devDependencies": {
+        "tsup": "^7.2.0",
+        "typescript": "^5.0.0"
+    }
+}
